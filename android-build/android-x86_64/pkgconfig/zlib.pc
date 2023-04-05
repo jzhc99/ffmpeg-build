@@ -1,0 +1,12 @@
+prefix=/home/charliej/github/ffmpeg-build-scripts/build/forksource/android-toolchain-x86_64/sysroot/usr
+exec_prefix=${prefix}
+libdir=${prefix}/usr/lib
+includedir=${prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.7
+
+Requires:
+Libs: -L${libdir} -lz
+Cflags: -I${includedir}
